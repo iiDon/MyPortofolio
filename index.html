@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="font-[Inter]">
+    <!-- Header -->
+    <header class="">
+      <nav class="md:flex md:justify-around justify-between items-center p-7">
+        <div class="flex items-center justify-bwtween">
+          <!-- Logo -->
+          <h1 class="text-white text-[24px] text-right items-center">
+            <a href="/" class="">Sultan Alsaif</a>
+          </h1>
+          <!-- Menu Icon -->
+          <div
+            id="menu-icon"
+            class="text-white ml-auto cursor-pointer md:hidden"
+            onclick="openMenu()"
+          ></div>
+        </div>
+        <!-- Menu items -->
+        <ul
+          class="text-white rounded-lg bg-blue-800 md:border-0 md:bg-transparent mt-4 block md:flex duration-300 ease-out transform"
+          id="nav"
+        ></ul>
+      </nav>
+    </header>
+
+    <!-- Section 1 (Banner) -->
+    <section
+      class="m-auto text-center mt-20 text-[26px] sm:text-[32px] md:text-[48px] duration-300 ease-out transform"
+    >
+      <!-- Header -->
+      <h1 class="m-auto text-white duration-300 ease-out transform">
+        Hello, I'm <span class="text-[#00a6fb]">Sultan Alsaif</span><br />I'm a
+        Fullstack Developer
+      </h1>
+      <!-- Button -->
+      <button>
+        <a
+          class="inline-block px-12 py-3 text-sm font-medium text-white bg-[#0582ca] border border-[#006494] rounded active:text-indigo-500 hover:bg-transparent hover:text-[#00a6fb] mt-11 focus:outline-none focus:ring"
+          href="#"
+        >
+          Learn More
+        </a>
+      </button>
+    </section>
+
+    <!-- Section 2 (About) -->
+    <section class="text-white bg-gray-900">
+      <!-- Header -->
+      <h1
+        class="font-bold text-white text-center text-[24px] md:text-[32px] border-t border-gray-600 w-3/4 m-auto pt-12 mt-12"
+        id="about"
+      >
+        About
+      </h1>
+
+      <!-- Items -->
+      <div class="px-4 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+        <div
+          id="about-items"
+          class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Section 3 (Tools Usage) -->
+    <section class="duration-300 ease-out transform">
+      <!-- Header -->
+      <h1
+        class="font-bold text-white text-center text-[24px] md:text-[32px] border-t border-gray-600 w-3/4 m-auto pt-12 mt-12"
+        id="tools"
+      >
+        Tools Usage
+      </h1>
+
+      <div
+        id="my-tools"
+        class="p-4 mt-4 text-center grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 duration-300 ease-out transform"
+      ></div>
+    </section>
+
+    <!-- Section 4 (My Projects) -->
+    <section>
+      <h1
+        class="font-bold text-white text-center text-[24px] md:text-[32px] border-t border-gray-600 w-3/4 m-auto pt-12 mt-12"
+        id="projects"
+      >
+        Projects
+      </h1>
+    </section>
+
+    <!-- Section 5  (Contact Me)-->
+    <section>
+        <h1
+        class="font-bold text-white text-center text-[24px] md:text-[32px] border-t border-gray-600 w-3/4 m-auto pt-12 mt-12"
+        id="contact"
+      >
+        Contact
+      </h1>
+    </section>
+
+    <style>
+      body {
+        background: #051923;
+      }
+    </style>
+    <script src="myscripts.js"></script>
+  </body>
+</html>
