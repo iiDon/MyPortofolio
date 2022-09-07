@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -23,11 +24,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <title>Document</title>
+    <title>Sultan Alsaif | Portfolio</title>
   </head>
   <body class="font-[Inter]">
     <!-- Header -->
-    <header class="">
+    <header class="wow fadeInDown">
       <nav class="md:flex md:justify-around justify-between items-center p-7">
         <div class="flex items-center justify-bwtween">
           <!-- Logo -->
@@ -43,7 +44,7 @@
         </div>
         <!-- Menu items -->
         <ul
-          class="text-white  border-[2] rounded-lg bg-[#00a6fb] md:border-0 md:bg-transparent mt-4 block md:flex duration-300 ease-out transform"
+          class="text-white border-[2] rounded-lg bg-[#00a6fb] md:border-0 md:bg-transparent mt-4 block md:flex transition ease-out"
           id="nav"
         ></ul>
       </nav>
@@ -51,7 +52,8 @@
 
     <!-- Section 1 (Banner) -->
     <section
-      class="m-auto text-center mt-20 text-[26px] sm:text-[32px] md:text-[48px] duration-300 ease-out transform"
+      class="m-auto text-center mt-20 text-[26px] sm:text-[32px] md:text-[48px] duration-300 ease-out transform wow bounceInLeft"
+      data-wow-duration="2s"
     >
       <!-- Header -->
       <h1 class="m-auto text-white duration-300 ease-out transform">
@@ -70,7 +72,7 @@
     </section>
 
     <!-- Section 2 (About) -->
-    <section class="text-white bg-gray-900">
+    <section data-wow-duration="2s" class="text-white wow bounceInRight">
       <!-- Header -->
       <h1
         class="font-bold text-white text-center text-[24px] md:text-[32px] border-t border-gray-600 w-3/4 m-auto pt-12 mt-12"
@@ -89,7 +91,7 @@
     </section>
 
     <!-- Section 3 (Tools Usage) -->
-    <section class="duration-300 ease-out transform">
+    <section data-wow-duration="2s" class="wow bounceInLeft">
       <!-- Header -->
       <h1
         class="font-bold text-white text-center text-[24px] md:text-[32px] border-t border-gray-600 w-3/4 m-auto pt-12 mt-12"
@@ -100,7 +102,7 @@
 
       <div
         id="my-tools"
-        class="p-4 mt-4 text-center grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 duration-300 ease-out transform"
+        class="p-4 mt-4 text-center grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
       ></div>
     </section>
 
@@ -186,5 +188,9 @@
       }
     </style>
     <script src="myscripts.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
