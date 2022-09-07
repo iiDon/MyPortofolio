@@ -208,8 +208,8 @@ document.getElementById("my-tools").innerHTML = tools
     (tool) => `
     
     <div class="mt-4 group duration-300 ease-out transform">
-        <label class="group-hover:block  relative bg-white hidden w-fit px-3  rounded m-auto  mb-2 ">${tool.name}</label>
-        <i class="${tool.class} p-4 md:text-[72px] text-[60px] text-white"></i>
+    <label class="group-hover:block group-hover:absolute top-0 left-0  bg-white hidden w-fit px-3  rounded ">${tool.name}</label>
+    <i class="${tool.class} md:text-[72px] text-[60px] text-white"></i>
     </div>
 `
   )
