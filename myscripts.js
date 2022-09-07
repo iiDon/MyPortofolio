@@ -186,10 +186,10 @@ const openMenu = () => {
     .map(
       (item, index) =>
         `
-    <a href="${item.route}">
+    <a href="${item.route}" class=" transition ease-out">
     <li class="${
       menu ? "block" : "hidden"
-    } md:block px-4 border-b-[0.5px] ${index === items.length-1? 'border-b-0' : ''} border-gray-600 cursor-pointer transition duration-150 transform md:py-auto py-2 md:border-0 md:mt-0 hover:text-white">${
+    } transition ease-out md:block px-4 border-b-[0.5px] ${index === items.length-1? 'border-b-0' : ''}  border-gray-600 cursor-pointer  md:py-auto py-2 md:border-0 md:mt-0 hover:text-white">${
           item.name
         }</li>
       </a>
@@ -207,9 +207,9 @@ document.getElementById("my-tools").innerHTML = tools
   .map(
     (tool) => `
     
-    <div class="mt-4 group duration-300 ease-out transform">
+    <div class="mt-4 group">
     <label class="group-hover:block group-hover:absolute top-0 left-0  bg-white hidden w-fit px-3  rounded ">${tool.name}</label>
-    <i class="${tool.class} md:text-[72px] text-[60px] text-white"></i>
+    <i class="${tool.class} md:text-[72px] text-[60px] text-white "></i>
     </div>
 `
   )
