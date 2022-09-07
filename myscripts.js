@@ -101,6 +101,7 @@ const items = [
   },
 ];
 
+// navbar items
 document.getElementById("nav").innerHTML = items
   .map(
     (item) =>
@@ -117,7 +118,6 @@ document.getElementById("nav").innerHTML = items
 //   ========================================================
 
 // About section
-
 const aboutItems = [
   {
     icon: "phone-landscape-outline",
@@ -143,6 +143,7 @@ const aboutItems = [
   },
 ];
 
+// About mapping
 document.getElementById("about-items").innerHTML = aboutItems
   .map(
     (item) =>
@@ -164,7 +165,6 @@ document.getElementById("about-items").innerHTML = aboutItems
 //   ========================================================
 
 // open and close menu
-//
 document.getElementById(
   "menu-icon"
 ).innerHTML = `<ion-icon class="" size="large" id="menu-tap" name=${
@@ -200,7 +200,7 @@ const openMenu = () => {
   console.log(menu);
 };
 
-// =================================
+//   ========================================================
 
 // Tools Usage
 document.getElementById("my-tools").innerHTML = tools
@@ -214,3 +214,9 @@ document.getElementById("my-tools").innerHTML = tools
 `
   )
   .join("");
+
+
+//   ========================================================
+
+
+// Projects Mapping
