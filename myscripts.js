@@ -172,7 +172,7 @@ document.getElementById(
 }></ion-icon>`;
 
 const openMenu = () => {
-  !menu ? nav.classList.add("border") : nav.classList.remove("border");
+  // !menu ? nav.classList.add("border") : nav.classList.remove("border");
 
   menu = !menu;
 
@@ -189,7 +189,7 @@ const openMenu = () => {
     <a href="${item.route}">
     <li class="${
       menu ? "block" : "hidden"
-    } md:block px-4 border-b-[0.5px] border-gray-600 cursor-pointer transition duration-150 transform md:py-auto py-2 md:border-0 md:mt-0 hover:text-white">${
+    } md:block px-4 border-b-[0.5px] ${index === items.length-1? 'border-b-0' : ''} border-gray-600 cursor-pointer transition duration-150 transform md:py-auto py-2 md:border-0 md:mt-0 hover:text-white">${
           item.name
         }</li>
       </a>
