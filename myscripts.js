@@ -95,10 +95,6 @@ const items = [
     name: "PROJECTS",
     route: "#projects",
   },
-  {
-    name: "CONTACT",
-    route: "#contact",
-  },
 ];
 
 // navbar items
