@@ -216,4 +216,14 @@ document.getElementById("my-tools").innerHTML = tools
 
 //   ========================================================
 
-// Projects Mapping
+// counter
+const countEl = document.getElementById('count')
+const updateVisitCount = () => {
+  fetch('https://api.countapi.xyz/update/sultan-alsaif.netlify.app/kfsd3rkfd-83042j-kd43rk-kcgke4-kfe53lskdswfw/?amount=1')
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value
+  })
+}
+
+updateVisitCount()
