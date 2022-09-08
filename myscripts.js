@@ -81,7 +81,7 @@ const tools = [
 const items = [
   {
     name: "HOME",
-    route: "#home",
+    route: "#",
   },
   {
     name: "ABOUT",
@@ -160,6 +160,11 @@ document.getElementById("about-items").innerHTML = aboutItems
 
 //   ========================================================
 
+// close menu
+const closeMenu = () => {
+  openMenu();
+};
+
 // open and close menu
 document.getElementById(
   "menu-icon"
@@ -168,8 +173,6 @@ document.getElementById(
 }></ion-icon>`;
 
 const openMenu = () => {
-  // !menu ? nav.classList.add("border") : nav.classList.remove("border");
-
   menu = !menu;
 
   document.getElementById(
@@ -182,7 +185,7 @@ const openMenu = () => {
     .map(
       (item, index) =>
         `
-    <a href="${item.route}" class=" transition ease-out">
+    <a href="${item.route}" onClick="closeMenu()" class=" transition ease-out">
     <li class="${
       menu ? "block" : "hidden"
     } transition ease-out md:block px-4 border-b-[0.5px] ${
@@ -194,8 +197,6 @@ const openMenu = () => {
     `
     )
     .join("");
-
-  console.log(menu);
 };
 
 //   ========================================================
