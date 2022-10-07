@@ -136,7 +136,7 @@ const aboutItems = [
   {
     icon: "car-outline",
     title: "Fast",
-    content: "I will finish the site in short time and high quality",
+    content: "I will finish your website in short time and high quality",
   },
   {
     icon: "expand-outline",
