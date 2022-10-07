@@ -24,8 +24,16 @@ const tools = [
     name: "JAVASCRIPT",
   },
   {
+    class: "devicon-typescript-plain colored",
+    name: "TYPESCRIPT",
+  },
+  {
     class: "devicon-react-original colored",
     name: "REACT JS",
+  },
+  {
+    class: "devicon-nextjs-original-wordmark",
+    name: "Next JS",
   },
   {
     class: "devicon-redux-original colored",
@@ -42,6 +50,10 @@ const tools = [
   {
     class: "devicon-mongodb-plain-wordmark colored",
     name: "MONGODB",
+  },
+  {
+    class: "devicon-postgresql-plain-wordmark colored",
+    name: "Postgresql",
   },
   {
     class: "devicon-npm-original-wordmark colored",
@@ -217,13 +229,15 @@ document.getElementById("my-tools").innerHTML = tools
 //   ========================================================
 
 // counter
-const countEl = document.getElementById('count')
+const countEl = document.getElementById("count");
 const updateVisitCount = () => {
-  fetch('https://api.countapi.xyz/update/sultan-alsaif.netlify.app/kfsd3rkfd-83042j-kd43rk-kcgke4-kfe53lskdswfw/?amount=1')
-  .then(res => res.json())
-  .then(res => {
-    countEl.innerHTML = res.value
-  })
-}
+  fetch(
+    "https://api.countapi.xyz/update/sultan-alsaif.netlify.app/kfsd3rkfd-83042j-kd43rk-kcgke4-kfe53lskdswfw/?amount=1"
+  )
+    .then((res) => res.json())
+    .then((res) => {
+      countEl.innerHTML = res.value;
+    });
+};
 
-updateVisitCount()
+updateVisitCount();
