@@ -243,12 +243,7 @@ const updateVisitCount = () => {
 const proj = document.getElementById("proj");
 const projects = [
   {
-    name: "My Food",
-    desc: "My Food is a landing page for a food app.",
-    link: "https://www.myfood-app.com/",
-  },
-  {
-    name: "Faculty Evaluatio",
+    name: "Faculty Evaluation",
     desc: "Faculty Evaluation is an application that helps the students to evaluate the faculty in honest way",
     link: "https://front-end-faculty.vercel.app/login",
   },
@@ -266,6 +261,11 @@ const projects = [
     name: "Human Resources",
     desc: "Human Resources is an application that helps the compamy to recruit new employees",
     link: "https://hr-jade.vercel.app/auth/login",
+  },
+  {
+    name: "My Food",
+    desc: "My Food is a landing page for a food app.",
+    link: "https://www.myfood-app.com/",
   },
   {
     name: "Eid Card",
