@@ -240,4 +240,76 @@ const updateVisitCount = () => {
     });
 };
 
+const proj = document.getElementById("proj");
+const projects = [
+  {
+    name: "My Food",
+    desc: "My Food is a landing page for a food app.",
+    link: "https://www.myfood-app.com/",
+  },
+  {
+    name: "Faculty Evaluatio",
+    desc: "Faculty Evaluation is an application that helps the students to evaluate the faculty in honest way",
+    link: "https://front-end-faculty.vercel.app/login",
+  },
+  {
+    name: "Questions Bank",
+    desc: "Questions Bank is an application that helps the faculty to add questions and back to them later",
+    link: "https://questions-bank-jade.vercel.app/dashboard",
+  },
+  {
+    name: "Quran Students System",
+    desc: "Quran Students System is an application that helps the students to learn the quran and track their progress",
+    link: "https://students-quran-system.vercel.app/",
+  },
+  {
+    name: "Human Resources",
+    desc: "Human Resources is an application that helps the compamy to recruit new employees",
+    link: "https://hr-jade.vercel.app/auth/login",
+  },
+  {
+    name: "Eid Card",
+    desc: "Eid Card is an application that helps the employees to get eid card and send it to their friends",
+    link: "https://eid-card-ten.vercel.app/",
+  },
+  {
+    name: "Golden Concept",
+    desc: "Golden Concept is a landing page for a company",
+    link: "https://golden-concept.vercel.app/",
+  },
+];
+
+proj.innerHTML = projects
+  .map(
+    (project) => `
+        <div ">
+          <div
+            class="bg-gray-800 h-56 shadow-lg rounded-lg px-4 py-6 m-4 flex flex-col justify-between leading-normal"
+          >
+            <div class="mb-8">
+              <p class="text-sm text-gray-200 flex items-center">
+                <span class="font-bold text-xl mb-2">${project.name}</span>
+              </p>
+              <div class="text-white text-base">
+                <p>${project.desc}</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="text-sm">
+                <a class="text-blue-200 hover:text-gray-400" href="${project.link}"
+                  >Project Link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+`
+  )
+  .join("");
+
+// <img
+//   class="rounded border-4 my-8 h-[200px] w-[400px]"
+//   src="${project.img}"
+//   alt=""
+// />;
 updateVisitCount();
